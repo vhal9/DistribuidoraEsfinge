@@ -17,6 +17,10 @@ Este repositório contém um sistema de vendas de uma distribuidora fictícia de
   - Implementado o back-end com as rotas de todo o sistema.
   
 ## Como executar:
+- diretório backend:
+```sh
+  cd backend
+  ```
 - instalar o node:
 ```sh
   # install [nodejs](https://nodejs.org/en/) if you don't already have it
