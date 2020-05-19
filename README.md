@@ -2,10 +2,6 @@
 
 > Sistema de vendas distribuidora Esfinge.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 ## Resumo:
 Este repositório contém um sistema de vendas de uma distribuidora fictícia de produtos de material de construção e afins. O sistema contém dois tipos de usuários alvos: 
   
@@ -20,4 +16,17 @@ Este repositório contém um sistema de vendas de uma distribuidora fictícia de
 
   - Implementado o back-end com as rotas de todo o sistema.
   
-## Como utilizar
+## Como executar:
+- instalar o node:
+```sh
+  # install [nodejs](https://nodejs.org/en/) if you don't already have it
+  ```
+- instalar dependencias:
+```sh
+  npm i
+  ```
+- executar o backend:
+```sh
+  npm start
+  ```
+ 
