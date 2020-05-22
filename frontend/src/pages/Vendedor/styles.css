@@ -1,0 +1,118 @@
+.vendedor-container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+}
+
+.vendedor-container header{
+    display: flex;
+    align-items: center;
+
+}
+.vendedor-container header span{
+    font-size: 20px;
+    margin-left: 24px;
+    color:#c87137;
+}
+
+.vendedor-container header img{
+    height: 64px;
+}
+
+.vendedor-container header a{
+    width: 160px;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.vendedor-container header button{
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    border: 1px solid #c87137;
+    background: transparent;
+    margin-left: 16px;
+    transition: border-color 0.2s;
+}
+
+.vendedor-container header button:hover{
+    border-color: #874000;
+}
+
+.vendedor-container h1{
+    margin-top: 80px;
+    margin-bottom: 24px;
+    color:#c87137;
+}
+.vendedor-container section.table{
+    width: 100%;
+    max-width: 2200px;
+    min-width: 1000px;
+    min-height: 300px;
+    
+    background-color: #c87137e3;
+    border-style:solid ;
+    border-color: #874000;
+    border-radius: 1vh;
+    height:50px;
+    overflow:auto; 
+}
+
+.vendedor-container section table{
+    width: 100%;
+    background-color: #c87137e3;
+    
+    border-bottom: 1px solid #ddd;
+    border-radius: 1vh;
+    border-color: #874000;
+    text-align: center;
+    
+}
+.vendedor-container section table tr{
+    vertical-align: middle;
+    padding: 10px;
+    
+}
+.vendedor-container section table tr:hover{
+    background-color: #c87137;
+}
+.vendedor-container table tr th{
+    font-size: 150%;
+}
+
+
+.vendedor-container section table tr td{
+    padding: 5px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid;
+}
+
+
+.vendedor-container section table button{
+
+    border-radius: 4px;
+    border: 1px solid #c87137;
+    background: transparent;    
+    transition: border-color 0.2s;
+}
+
+.vendedor-container section table button:hover{
+    border-color: #874000;
+}
+
+.vendedor-container section.menu{
+    margin-top: 0px;
+}
+
+.vendedor-container section.menu ul{
+    text-align: center;
+}
+.vendedor-container section.menu ul li{
+    text-decoration: none;
+    display: inline;
+    padding: 20px;
+}
+.vendedor-container section.menu a{
+    width: 150px;
+}

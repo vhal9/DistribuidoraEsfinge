@@ -1,0 +1,89 @@
+.cliente-container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+}
+
+.cliente-container header{
+    display: flex;
+    align-items: center;
+
+}
+.cliente-container header span{
+    font-size: 20px;
+    margin-left: 24px;
+    color:#c87137;
+}
+
+.cliente-container header img{
+    height: 64px;
+}
+
+.cliente-container header a{
+    width: 160px;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.cliente-container header button{
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    border: 1px solid #c87137;
+    background: transparent;
+    margin-left: 16px;
+    transition: border-color 0.2s;
+}
+
+.cliente-container header button:hover{
+    border-color: #874000;
+}
+
+.cliente-container h1{
+    margin-top: 10px;
+    margin-bottom: 24px;
+    color:#c87137;
+}
+
+.cliente-container .body{
+    margin-top: 50px;
+    width:100%;
+    max-width: 1120px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    
+}
+.cliente-container .body .form{
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    
+}
+
+.cliente-container .body .form form input,
+.cliente-container .body .form form textarea{
+    margin-top: 8px;
+}
+.cliente-container .body .form form textarea{
+width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    height: 40px;
+    color: #333;
+    border: 1px solid #c87137;
+    border-radius: 8px;
+    padding: 16px 24px;
+    line-height: 24px;
+}
+
+.cliente-container .body .form a{
+    text-decoration: none;
+    font-size: 20px;
+    color:#c87137;
+
+}
+
+
