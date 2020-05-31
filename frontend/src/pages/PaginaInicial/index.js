@@ -4,7 +4,7 @@ import './styles.css';
 
 import logoImg from '../../assets/logo.png';
 
-export default function Login(){
+export default function Inicial(){
     return(
         <div className="inicial-container">
             <section className="form">

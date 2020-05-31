@@ -6,7 +6,7 @@ module.exports = {
 
         const gerente = await connection('gerente')
             .where('emailGerente', email)
-            .select('emailGerente', 'senhaGerente')
+            .select('emailGerente', 'senhaGerente', 'cpfGerente', 'nomeGerente')
             .first();
         
         if(gerente == null){

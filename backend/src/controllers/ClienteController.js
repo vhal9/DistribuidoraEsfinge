@@ -38,6 +38,8 @@ module.exports = {
         }
         
         try {
+            console.log(cnpjCliente,cpfVendedor );
+            
             await connection('cliente').insert({
                 cnpjCliente,
                 cpfVendedor,
@@ -47,7 +49,7 @@ module.exports = {
                 enderecoCliente,
             });
         } catch (error) {
-            
+            console.log(error)
             return response.status(500).send();
         } 
         

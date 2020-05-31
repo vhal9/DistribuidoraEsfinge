@@ -4,6 +4,7 @@ const VendedorController = require('./controllers/VendedorController');
 const GerenteController = require('./controllers/GerenteController');
 const ProdutoController = require('./controllers/ProdutoController');
 const ClienteController = require('./controllers/ClienteController');
+const ClienteVendedorController = require('./controllers/ClienteVendedorController');
 const FornecedorController = require('./controllers/FornecedorController');
 const CompraController = require('./controllers/CompraController');
 const ProdutoCompraController = require('./controllers/ProdutoCompraController');
@@ -38,6 +39,8 @@ routes.get('/cliente/:id', ClienteController.indexID);
 routes.put('/cliente', ClienteController.put);
 routes.post('/cliente', ClienteController.create);
 routes.delete('/cliente/:id', ClienteController.delete);
+
+routes.get('/clienteVendedor', ClienteVendedorController.index);
 
 routes.get('/fornecedor', FornecedorController.index);
 routes.get('/fornecedor/:id', FornecedorController.indexID);

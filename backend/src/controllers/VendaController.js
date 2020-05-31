@@ -55,7 +55,7 @@ module.exports = {
             return response.json(idVenda);
             
         } catch (error) {
-            
+            console.log(error);
             return response.status(500).send(); 
         }
     },

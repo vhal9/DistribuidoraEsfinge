@@ -14,6 +14,7 @@ module.exports = {
         }
 
         const compras = await connection('compra')
+            .where('compra.idGerente', gerenteId)
             .join('fornecedor', 'fornecedor.cnpjFornecedor','=','compra.idFornecedor')
             .select('compra.*','fornecedor.nomeFornecedor');
 

@@ -6,7 +6,7 @@ module.exports = {
 
         const vendedor = await connection('vendedor')
             .where('emailVendedor', email)
-            .select('emailVendedor', 'senhaVendedor')
+            .select('emailVendedor', 'senhaVendedor', 'nomeVendedor', 'cpfVendedor')
             .first();
         
         if(vendedor == null){

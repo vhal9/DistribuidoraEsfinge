@@ -1,32 +1,32 @@
-.cad-cliente-container {
+.cad-compra-container {
     width: 100%;
     max-width: 1180px;
     padding: 0 30px;
     margin: 32px auto;
 }
 
-.cad-cliente-container header{
+.cad-compra-container header{
     display: flex;
     align-items: center;
 
 }
-.cad-cliente-container header span{
+.cad-compra-container header span{
     font-size: 20px;
     margin-left: 24px;
     color:#c87137;
 }
 
-.cad-cliente-container header img{
+.cad-compra-container header img{
     height: 64px;
 }
 
-.cad-cliente-container header a{
+.cad-compra-container header a{
     width: 160px;
     margin-left: auto;
     margin-top: 0;
 }
 
-.cad-cliente-container header button{
+.cad-compra-container header button{
     height: 60px;
     width: 60px;
     border-radius: 4px;
@@ -36,17 +36,17 @@
     transition: border-color 0.2s;
 }
 
-.cad-cliente-container header button:hover{
+.cad-compra-container header button:hover{
     border-color: #874000;
 }
 
-.cad-cliente-container h1{
+.cad-compra-container h1{
     margin-top: 10px;
     margin-bottom: 24px;
     color:#c87137;
 }
 
-.cad-cliente-container .body{
+.cad-compra-container .body{
     margin-top: 50px;
     width:100%;
     max-width: 1120px;
@@ -56,18 +56,23 @@
     align-items: center;  
     
 }
-.cad-cliente-container .body .form{
+.cad-compra-container .body .form{
     width: 100%;
     max-width: 450px;
     text-align: center;
+    
 }
 
 
-.cad-cliente-container .body .form form input
-.cad-cliente-container .body .form form textarea{
+.cad-compra-container .body .form form input
+.cad-compra-container .body .form form textarea{
     margin-top: 8px;
 }
-.cad-cliente-container .body .form form select {
+
+.cad-compra-container .body .form form input::placeholder{
+    color: #c87137;
+}
+.cad-compra-container .body .form form select {
    
     text-decoration: #c87137;
     font-size: 20px;
@@ -84,30 +89,19 @@
 
     
 }
-.cad-cliente-container .body .form form select option:disabled{
+.cad-compra-container .body .form form select option:disabled{
     color: #333;
     
 }
 
-.cad-cliente-container .body .form form textarea{
-width: 100%;
-    resize: vertical;
-    min-height: 100px;
-    height: 40px;
-    color: #333;
-    border: 1px solid #c87137;
-    border-radius: 8px;
-    padding: 16px 24px;
-    line-height: 24px;
-}
 
-.cad-cliente-container .body .form a{
+.cad-compra-container .body .form a{
     text-decoration: none;
     font-size: 20px;
     color:#c87137;
 
 }
-.cad-cliente-container .body .form a:hover{
+.cad-compra-container .body .form a:hover{
     color:#874000;
 }
 
