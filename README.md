@@ -15,15 +15,19 @@ Este repositório contém um sistema de vendas de uma distribuidora fictícia de
 ## Estado atual:
 
   - Implementado o back-end com as rotas de todo o sistema.
+  - Implementado as telas de cadastro, consulta e remoção das rotas do usuario gerente.
   
 ## Como executar:
-- diretório backend:
-```sh
-  cd backend
-  ```
+- Clone o repositório.
+
 - instalar o node:
 ```sh
   # install [nodejs](https://nodejs.org/en/) if you don't already have it
+  ```
+### Execute o backend
+- diretório backend:
+```sh
+  cd backend
   ```
 - instalar dependencias:
 ```sh
@@ -33,4 +37,22 @@ Este repositório contém um sistema de vendas de uma distribuidora fictícia de
 ```sh
   npm start
   ```
+### Execute o frontend
+- diretório frontend:
+```sh
+  cd frontend
+  ```
+- instalar dependencias:
+```sh
+  npm i
+  ```
+- executar o frontend:
+```sh
+  npm start
+  ```
+- Login Gerente:
+  - email: sergirodrigues@gmail.com
+  - senha: 493020
+
+
  
