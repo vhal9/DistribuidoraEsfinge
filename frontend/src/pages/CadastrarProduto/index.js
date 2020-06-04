@@ -38,7 +38,7 @@ export default function CadastrarProduto(){
                 }
             });
             alert('Produto Cadastrado com sucesso.')
-            history.push('/gerente')
+            history.push('/ConsultarProdutosG')
         } catch (error) {
             alert('Erro no cadastro, tente novamente.');
         }
@@ -58,7 +58,7 @@ export default function CadastrarProduto(){
                 <img src={logoImg} alt="logo" className="logo" />
                 <span>Bem vindo, {gerenteNome}</span>
 
-                <Link className="button" to="/">Conta</Link>
+                <Link className="button" to="/ConsultarGerente">Conta</Link>
                 <button type="button" onClick={handleLogout}> 
                     <FiPower size={18} color="#c87137"/>
                 </button>
@@ -99,9 +99,9 @@ export default function CadastrarProduto(){
                         <button className="button" type="submit">Cadastrar</button>
                     </form>
                     <br />
-                    <Link className="back-link" to="/gerente">
+                    <Link className="back-link" to="/ConsultarProdutosG">
                         <FiArrowLeft size={16} color="#c87137"/>
-                        Voltar para Início
+                        Voltar para Produtos
                     </Link>
                     
                 </section>

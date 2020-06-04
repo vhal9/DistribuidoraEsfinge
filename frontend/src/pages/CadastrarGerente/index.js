@@ -8,37 +8,37 @@ import './styles.css';
 
   
 
-export default function CadastrarVendedor(){
+export default function CadastrarGerente(){
 
     const idGerente = localStorage.getItem('cpfGerente');
     const gerenteNome = localStorage.getItem('nomeGerente');
 
-    const [cpfVendedor, setCpfVendedor] = useState('');
-    const [nomeVendedor, setNomeVendedor] = useState('');
-    const [telefoneVendedor, setTelefoneVendedor] = useState('');
-    const [emailVendedor, setEmailVendedor] = useState('');
-    const [senhaVendedor, setSenhaVendedor] = useState('');
+    const [cpfGerente, setCpfGerente] = useState('');
+    const [nomeGerente, setNomeGerente] = useState('');
+    const [telefoneGerente, setTelefoneGerente] = useState('');
+    const [emailGerente, setEmailGerente] = useState('');
+    const [senhaGerente, setSenhaGerente] = useState('');
 
     const history = useHistory();
 
-    async function handleNewVendedor(e){
+    async function handleNewGerente(e){
         e.preventDefault();
 
         const data = {
-            cpfVendedor,
-            nomeVendedor,
-            telefoneVendedor,
-            emailVendedor,
-            senhaVendedor,
+            cpfGerente,
+            nomeGerente,
+            telefoneGerente,
+            emailGerente,
+            senhaGerente,
         };
         try {
-            await api.post('vendedor', data, {
+            await api.post('gerente', data, {
                 headers:{
                     Authorization: idGerente,
                 }
             });
-            alert('Vendedor cadastrado com sucesso.')
-            history.push('/ConsultaVendedoresG')
+            alert('Gerente cadastrado com sucesso.')
+            history.push('/ConsultarGerentesG')
         } catch (error) {
             alert('Erro no cadastro, tente novamente.');
         }
@@ -53,7 +53,7 @@ export default function CadastrarVendedor(){
 
 
     return(
-        <div className="cad-vendedor-container">
+        <div className="cad-gerente-container">
             <header>
                 <img src={logoImg} alt="logo" className="logo" />
                 <span>Bem vindo, {gerenteNome}</span>
@@ -66,42 +66,42 @@ export default function CadastrarVendedor(){
             <div className="body" >
                 
                 <section className="form">
-                    <h1>Cadastrar vendedor:</h1>
-                    <form onSubmit={handleNewVendedor}>
+                    <h1>Cadastrar gerente:</h1>
+                    <form onSubmit={handleNewGerente}>
                         
                         <input 
                             placeholder="CPF"
-                            value={cpfVendedor}
-                            onChange={e => setCpfVendedor(e.target.value)}
+                            value={cpfGerente}
+                            onChange={e => setCpfGerente(e.target.value)}
                         />
                         <input 
                             placeholder="Nome"
-                            value={nomeVendedor}
-                            onChange={e => setNomeVendedor(e.target.value)}
+                            value={nomeGerente}
+                            onChange={e => setNomeGerente(e.target.value)}
                         />
                         <input 
                             placeholder="Telefone"
-                            value={telefoneVendedor}
-                            onChange={e => setTelefoneVendedor(e.target.value)}    
+                            value={telefoneGerente}
+                            onChange={e => setTelefoneGerente(e.target.value)}    
                         />
                         <input 
                             type="email"
                             placeholder="Email"
-                            value={emailVendedor}
-                            onChange={e => setEmailVendedor(e.target.value)}
+                            value={emailGerente}
+                            onChange={e => setEmailGerente(e.target.value)}
                         />
                         <input
                             placeholder="Senha"
-                            value={senhaVendedor}
-                            onChange={e => setSenhaVendedor(e.target.value)}
+                            value={senhaGerente}
+                            onChange={e => setSenhaGerente(e.target.value)}
 
                         />
                         <button className="button" type="submit">Cadastrar</button>
                     </form>
                     <br />
-                    <Link className="back-link" to="/ConsultarVendedoresG">
+                    <Link className="back-link" to="/ConsultarGerentesG">
                         <FiArrowLeft size={16} color="#c87137"/>
-                        Voltar para Vendedores
+                        Voltar para Gerentes
                     </Link>
                     
                 </section>

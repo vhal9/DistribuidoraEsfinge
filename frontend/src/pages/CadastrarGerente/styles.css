@@ -1,0 +1,81 @@
+.cad-gerente-container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+}
+
+.cad-gerente-container header{
+    display: flex;
+    align-items: center;
+
+}
+.cad-gerente-container header span{
+    font-size: 20px;
+    margin-left: 24px;
+    color:#c87137;
+}
+
+.cad-gerente-container header img{
+    height: 64px;
+}
+
+.cad-gerente-container header a{
+    width: 160px;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.cad-gerente-container header button{
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    border: 1px solid #c87137;
+    background: transparent;
+    margin-left: 16px;
+    transition: border-color 0.2s;
+}
+
+.cad-gerente-container header button:hover{
+    border-color: #874000;
+}
+
+.cad-gerente-container h1{
+    margin-top: 10px;
+    margin-bottom: 24px;
+    color:#c87137;
+}
+
+.cad-gerente-container .body{
+    margin-top: 50px;
+    width:100%;
+    max-width: 1120px;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    
+}
+.cad-gerente-container .body .form{
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+
+.cad-gerente-container .body .form form input
+.cad-gerente-container .body .form form textarea{
+    margin-top: 8px;
+}
+
+.cad-gerente-container .body .form a{
+    text-decoration: none;
+    font-size: 20px;
+    color:#c87137;
+
+}
+.cad-gerente-container .body .form a:hover{
+    color:#874000;
+}
+
+

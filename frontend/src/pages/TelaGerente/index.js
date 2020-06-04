@@ -7,7 +7,7 @@ import './styles.css';
 import api from '../../services/api';
 
 
-export default function TelaGerente(){
+export default function Gerente(){
     const idGerente = localStorage.getItem('cpfGerente');
     const gerenteNome = localStorage.getItem('nomeGerente');
 
@@ -28,7 +28,7 @@ export default function TelaGerente(){
 
     async function handleDeleteCompra(idCompra){
         try {
-            api.delete(`compra/${idCompra}`, {
+            await api.delete(`compra/${idCompra}`, {
                 headers:{
                     Authorization: idGerente,
                 }
@@ -50,7 +50,7 @@ export default function TelaGerente(){
                 <img src={logoImg} alt="logo" className="logo" />
                 <span>Bem vindo, {gerenteNome}</span>
 
-                <Link className="button" to="/">Conta</Link>
+                <Link className="button" to="/ConsultarGerente">Conta</Link>
                 <button type="button" onClick={handleLogout}> 
                     <FiPower size={18} color="#c87137"/>
                 </button>
@@ -76,10 +76,6 @@ export default function TelaGerente(){
                             </td>
                         </tr>
                     ))}
-                    
-                   
-                   
-                
 
                 </table>
                 
@@ -90,21 +86,20 @@ export default function TelaGerente(){
                         <Link className="button" to="/CadastrarCompra">Nova Compra</Link>
                     </li>
                     <li>
-                        <Link className="button" to="/">Produtos</Link>
+                        <Link className="button" to="/ConsultarProdutosG">Produtos</Link>
                     </li>
                     <li>
-                        <Link className="button" to="/">Fornecedores</Link>
+                        <Link className="button" to="/ConsultarFornecedoresG">Fornecedores</Link>
                     </li>
-                </ul>
-                <ul>
+                
                     <li>
-                        <Link className="button" to="/">Clientes</Link>
-                    </li>
-                    <li>
-                        <Link className="button" to="/">Vendedores</Link>
+                        <Link className="button" to="/ConsultarClientesG">Clientes</Link>
                     </li>
                     <li>
-                        <Link className="button" to="/">Gerentes</Link>
+                        <Link className="button" to="/ConsultarVendedoresG">Vendedores</Link>
+                    </li>
+                    <li>
+                        <Link className="button" to="/ConsultarGerentesG">Gerentes</Link>
                     </li>
                 </ul>
             </section>

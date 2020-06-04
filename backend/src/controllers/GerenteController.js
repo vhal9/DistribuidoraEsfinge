@@ -8,6 +8,7 @@ module.exports = {
        
         const gerenteId = request.headers.authorization;
         //verificar permissão
+        
         if(!autenticacao.gerenteAutenticacao(gerenteId)){
             return response.status(401).json({error: 'Operation not permited.'});
         }
@@ -20,7 +21,7 @@ module.exports = {
     },
     async indexID(request, response){
         const {id} = request.params;
-
+        
         const gerenteId = request.headers.authorization;
         //verificar permissão
         if(!autenticacao.gerenteAutenticacao(gerenteId)){
@@ -28,11 +29,11 @@ module.exports = {
         }
 
 
-        const gerentes = await connection('gerente')
+        const gerente = await connection('gerente')
             .where('cpfGerente', id)
             .select('*');
         
-        return response.json(gerentes);
+        return response.json(gerente);
     },
 
     async create(request, response){

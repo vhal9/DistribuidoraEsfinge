@@ -42,7 +42,7 @@ export default function CadastrarForcenecedor(){
                 }
             });
             alert('Fornecedor Cadastrado com sucesso.')
-            history.push('/gerente')
+            history.push('/ConsultarFornecedoresG')
         } catch (error) {
             alert('Erro no cadastro, tente novamente.');
         }
@@ -63,7 +63,7 @@ export default function CadastrarForcenecedor(){
                 <img src={logoImg} alt="logo" className="logo" />
                 <span>Bem vindo, {gerenteNome}</span>
 
-                <Link className="button" to="/">Conta</Link>
+                <Link className="button" to="/ConsultarGerente">Conta</Link>
                 <button type="button" onClick={handleLogout}> 
                     <FiPower size={18} color="#c87137"/>
                 </button>
@@ -101,9 +101,9 @@ export default function CadastrarForcenecedor(){
                         <button className="button" type="submit">Cadastrar</button>
                     </form>
                     <br />
-                    <Link className="back-link" to="/gerente">
+                    <Link className="back-link" to="/ConsultarFornecedoresG">
                         <FiArrowLeft size={16} color="#c87137"/>
-                        Voltar para Início
+                        Voltar para Fornecedores
                     </Link>
                     
                 </section>

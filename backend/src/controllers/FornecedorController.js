@@ -65,10 +65,11 @@ module.exports = {
 
         try {
             await connection('fornecedor').where('cnpjFornecedor', id).delete();
+            return response.status(201).send();
         } catch (error) {
             return response.status(500).send(); 
         }
-        return response.status(201).send();
+        
     },
     async put(request, response){
         const{ cnpjFornecedor, nomeFornecedor, telefoneFornecedor, emailFornecedor} = request.body;

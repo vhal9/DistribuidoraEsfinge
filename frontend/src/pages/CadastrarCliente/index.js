@@ -57,7 +57,7 @@ export default function CadastrarCliente(){
                 }
             });
             alert('Cliente Cadastrado com sucesso.')
-            history.push('/gerente')
+            history.push('/ConsultarClientesG')
         } catch (error) {
             alert('Erro no cadastro, tente novamente.');
         }
@@ -75,7 +75,7 @@ export default function CadastrarCliente(){
                 <img src={logoImg} alt="logo" className="logo" />
                 <span>Bem vindo, {gerenteNome}</span>
 
-                <Link className="button" to="/">Conta</Link>
+                <Link className="button" to="/ConsultarGerente">Conta</Link>
                 <button type="button" onClick={handleLogout}> 
                     <FiPower size={18} color="#c87137"/>
                 </button>
@@ -126,9 +126,9 @@ export default function CadastrarCliente(){
                         <button className="button" type="submit">Cadastrar</button>
                     </form>
                     <br />
-                    <Link className="back-link" to="/gerente">
+                    <Link className="back-link" to="/ConsultarClientesG">
                         <FiArrowLeft size={16} color="#c87137"/>
-                        Voltar para Início
+                        Voltar para Clientes
                     </Link>
                     
                 </section>
