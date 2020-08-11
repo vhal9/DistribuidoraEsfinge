@@ -31,7 +31,7 @@ Este repositório contém um sistema de vendas de uma distribuidora fictícia de
   ```
 - instalar dependencias:
 ```sh
-  npm i
+  npm install
   ```
 - executar o backend:
 ```sh
@@ -44,7 +44,7 @@ Este repositório contém um sistema de vendas de uma distribuidora fictícia de
   ```
 - instalar dependencias:
 ```sh
-  npm i
+  npm install
   ```
 - executar o frontend:
 ```sh
