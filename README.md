@@ -3,14 +3,18 @@
 > Sistema de vendas distribuidora Esfinge.
 
 ## Resumo:
-Este repositório contém um sistema de vendas de uma distribuidora fictícia de produtos de material de construção e afins. O sistema contém dois tipos de usuários alvos: 
+
+> Este repositório contém um sistema de vendas de uma distribuidora fictícia de produtos de material de construção e afins. O projeto se encontra em desenvolvimento.
+
+> O sistema contém dois tipos de usuários alvos: 
   
   - Gerente: tem a função de administrar, controlando os vendedores, os clientes, produtos e fornecedores, e realizando compras de produtos para a serem vendidos. 
   - Vendedor, utiliza o sistema para realizar as vendas junto aos clientes.
  
-## Requisitos do Sistema:
+## Ferramentas:
 
   - node v12.16.1
+  - React
 
 ## Estado atual:
 
